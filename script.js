@@ -1,10 +1,9 @@
 $(document).ready(function() {
-
-    $("#stream1_btn").mouseleave(function() {
-        $(".stream1").removeClass('highlight_stream');
-        $(".stream2").removeClass('highlight_stream');
-        $(".stream3").removeClass('highlight_stream');
-        $(".stream1").addClass('highlight_stream');
+     $("#stream1_btn").on("click", function() {
+        $(".stream1").show();
+        $(".stream1").show(1000);
+    $("#button_effects1").click(function(){
+            $('#button_effects1').hide('slow');
    });
 
    $("#stream2_btn").on("click", function() {
@@ -20,7 +19,8 @@ $(document).ready(function() {
         $(".stream3").removeClass('highlight_stream');
         $(".stream3").addClass('highlight_stream');
     }); 
-});      
+});     
+
 //waits until page is loaded first
 
     $(document).ready(function(){
